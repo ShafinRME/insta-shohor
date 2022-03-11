@@ -27,7 +27,7 @@ const reportPost = (id) => {
 };
 
 const displayContent = (text) => {
-  return text.length < 30 ? 'text' : text.slice(0, 30) + "<span class='fw-bold'>... read more</span>";
+  return text.length < 30 ? text : text.slice(0, 30) + "<span class='fw-bold'>... read more</span>";
 };
 
 const switchTab = (id) => {
@@ -51,10 +51,8 @@ const switchTab = (id) => {
 };
 
 const createPost = (post) => {
+  const pimg = post.userImage
   const image = post.image;
-  for (let i = 0; i <= 4; i++) {
-
-  }
   const div = document.createElement("article");
   div.classList.add("post");
   div.innerHTML = `
@@ -65,7 +63,7 @@ const createPost = (post) => {
                     target="_blank"
                     class="post__avatar"
                   >
-                    <img src="${post.userImage}" alt="User Picture" />
+                    <img src="${pimg}" alt="User Picture" />
                   </a>
                   <a href="#" class="post__user">phero</a>
                 </div>
@@ -132,6 +130,7 @@ const createPost = (post) => {
               </div>
       `;
   return div;
+
 };
 
 const showPosts = (posts) => {
