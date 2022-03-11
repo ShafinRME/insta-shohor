@@ -57,7 +57,8 @@
             <h1>Reported posts</h1>
         </div>
     </main>
-    <section>
+    <!-- Question answer section -->
+    <section class="container">
         <div id="firstQA">
             <h3>How does JavaScript Work?</h3>
             <p>
@@ -66,17 +67,19 @@
                 enabling JS in browser there are many types of Engine.These engine will be vary in browser to browser.In
                 chrome browser the JS engine's name is V8.
                 In a standard JS engine there are 4 steps to execute the source code to machine code.
-                1.Parser - Receiver.
-                2.AST(Abstract Syntax Tree) - Create a Data Structure by solving Errors.
-                3.Conversion to Machine Code - Convert the JS code to Machine code.
-                4.Machine Code - Previously converted code is sent to the system for execution and Finally byte code run
-                by the system.
-                This is the way how JS works.
+            <ol>
+                <li>Parser - Just like a Code Receiver.</li>
+                <li>AST(Abstract Syntax Tree) - Create a Data Structure by solving Errors.</li>
+                <li>Conversion to Machine Code - Convert the JS code to Machine code.</li>
+                <li>Machine Code - Previously converted code is sent to the system for execution and Finally byte code
+                    run by the system.</li>
+            </ol>
+            This is the way how JS works.
             </p>
         </div>
         <div id="secondQA">
             <h3>Difference between Local Storage and Session Storage</h3>
-            <table class="table table-bordered">
+            <table class="table table-bordered text-white">
                 <tr>
                     <th>
                         Local Storage
@@ -111,7 +114,7 @@
     <footer></footer>
 
     <!-- add javascript  file  -->
-    <script src="./js/appps.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>
